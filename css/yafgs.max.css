@@ -254,8 +254,7 @@ textarea {
 
   @page {
     margin: 0.5cm;
-}
-
+  }
   p,
   h2,
   h3 {
@@ -766,3 +765,240 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+/* ====== YAFGS Start ====== */
+/* yafgs */
+.yafgs {
+  max-width: 1140px;
+  margin: 10px auto;
+}
+.yafgs *,
+.yafgs *:after,
+.yafgs *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .yafgs {
+    margin: 10px;
+  }
+}
+.yafgs .row {
+  display: block;
+  position: relative;
+}
+.yafgs .row .col {
+  margin: 10px 0 0 0;
+  float: left;
+  padding: 0 5px;
+}
+.yafgs .row .col:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.yafgs .row .col.col-12-1 {
+  width: 100%;
+}
+.yafgs .row .col.col-12-1 .content:after {
+  content: " (100%)";
+}
+.yafgs .row .col.col-12-2 {
+  width: 50%;
+}
+.yafgs .row .col.col-12-2 .content:after {
+  content: " (50%)";
+}
+.yafgs .row .col.col-12-3 {
+  width: 33.33333%;
+}
+.yafgs .row .col.col-12-3 .content:after {
+  content: " (33.33333%)";
+}
+.yafgs .row .col.col-12-4 {
+  width: 25%;
+}
+.yafgs .row .col.col-12-4 .content:after {
+  content: " (25%)";
+}
+.yafgs .row .col.col-12-5 {
+  width: 20%;
+}
+.yafgs .row .col.col-12-5 .content:after {
+  content: " (20%)";
+}
+.yafgs .row .col.col-12-6 {
+  width: 16.66667%;
+}
+.yafgs .row .col.col-12-6 .content:after {
+  content: " (16.66667%)";
+}
+.yafgs .row .col.col-12-7 {
+  width: 14.28571%;
+}
+.yafgs .row .col.col-12-7 .content:after {
+  content: " (14.28571%)";
+}
+.yafgs .row .col.col-12-8 {
+  width: 12.5%;
+}
+.yafgs .row .col.col-12-8 .content:after {
+  content: " (12.5%)";
+}
+.yafgs .row .col.col-12-9 {
+  width: 11.11111%;
+}
+.yafgs .row .col.col-12-9 .content:after {
+  content: " (11.11111%)";
+}
+.yafgs .row .col.col-12-10 {
+  width: 10%;
+}
+.yafgs .row .col.col-12-10 .content:after {
+  content: " (10%)";
+}
+.yafgs .row .col.col-12-11 {
+  width: 9.09091%;
+}
+.yafgs .row .col.col-12-11 .content:after {
+  content: " (9.09091%)";
+}
+.yafgs .row .col.col-12-12 {
+  width: 8.33333%;
+}
+.yafgs .row .col.col-12-12 .content:after {
+  content: " (8.33333%)";
+}
+.yafgs .row .col.col-16-1 {
+  width: 100%;
+}
+.yafgs .row .col.col-16-1 .content:after {
+  content: " (100%)";
+}
+.yafgs .row .col.col-16-2 {
+  width: 50%;
+}
+.yafgs .row .col.col-16-2 .content:after {
+  content: " (50%)";
+}
+.yafgs .row .col.col-16-3 {
+  width: 33.33333%;
+}
+.yafgs .row .col.col-16-3 .content:after {
+  content: " (33.33333%)";
+}
+.yafgs .row .col.col-16-4 {
+  width: 25%;
+}
+.yafgs .row .col.col-16-4 .content:after {
+  content: " (25%)";
+}
+.yafgs .row .col.col-16-5 {
+  width: 20%;
+}
+.yafgs .row .col.col-16-5 .content:after {
+  content: " (20%)";
+}
+.yafgs .row .col.col-16-6 {
+  width: 16.66667%;
+}
+.yafgs .row .col.col-16-6 .content:after {
+  content: " (16.66667%)";
+}
+.yafgs .row .col.col-16-7 {
+  width: 14.28571%;
+}
+.yafgs .row .col.col-16-7 .content:after {
+  content: " (14.28571%)";
+}
+.yafgs .row .col.col-16-8 {
+  width: 12.5%;
+}
+.yafgs .row .col.col-16-8 .content:after {
+  content: " (12.5%)";
+}
+.yafgs .row .col.col-16-9 {
+  width: 11.11111%;
+}
+.yafgs .row .col.col-16-9 .content:after {
+  content: " (11.11111%)";
+}
+.yafgs .row .col.col-16-10 {
+  width: 10%;
+}
+.yafgs .row .col.col-16-10 .content:after {
+  content: " (10%)";
+}
+.yafgs .row .col.col-16-11 {
+  width: 9.09091%;
+}
+.yafgs .row .col.col-16-11 .content:after {
+  content: " (9.09091%)";
+}
+.yafgs .row .col.col-16-12 {
+  width: 8.33333%;
+}
+.yafgs .row .col.col-16-12 .content:after {
+  content: " (8.33333%)";
+}
+.yafgs .row .col.col-16-13 {
+  width: 7.69231%;
+}
+.yafgs .row .col.col-16-13 .content:after {
+  content: " (7.69231%)";
+}
+.yafgs .row .col.col-16-14 {
+  width: 7.14286%;
+}
+.yafgs .row .col.col-16-14 .content:after {
+  content: " (7.14286%)";
+}
+.yafgs .row .col.col-16-15 {
+  width: 6.66667%;
+}
+.yafgs .row .col.col-16-15 .content:after {
+  content: " (6.66667%)";
+}
+.yafgs .row .col.col-16-16 {
+  width: 6.25%;
+}
+.yafgs .row .col.col-16-16 .content:after {
+  content: " (6.25%)";
+}
+@media screen and (max-width: 767px) {
+  .yafgs .row .col[class*=' col-'] {
+    width: 100%;
+    float: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+.yafgs .row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h1 {
+  margin: 20px 0;
+}
+
+h2 {
+  margin: 40px 0 10px 0;
+}
+
+.content {
+  font-size: 0.8em;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  min-height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+.content:after {
+  font-size: 0.7em;
+  display: block;
+}
+
+/*# sourceMappingURL=yafgs.max.css.map */
