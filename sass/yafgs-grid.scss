@@ -25,7 +25,10 @@
 				clear: both;
 				display: table;
 			}
-
+			&.centered{
+				margin: 0 auto;
+			}
+			/* 12 Column Grid Widths */
 			@for $i from 1 through 12{
 				&.width-#{$i}-in-12 {
 					$twelve-col: (12/($i*12))*100%;
@@ -35,6 +38,8 @@
 					}
 				}
 			}
+
+			/* 16 Column Grid Widths */
 			@for $i from 1 through 16{
 				&.width-#{$i}-in-16 {
 					$sixteen-col: (16/($i*16))*100%;
@@ -45,6 +50,39 @@
 				}
 			}
 
+			/* 12 Column Grid Offset Left */
+			@for $i from 1 through 11{
+				&.push-left-#{$i} {
+					$twelve-col: ($i/12)*100%;
+					margin-left: $twelve-col;
+				}
+			}			
+
+			/* 12 Column Grid Offset Right */
+			@for $i from 1 through 11{
+				&.push-right-#{$i} {
+					$twelve-col: ($i/12)*100%;
+					margin-right: $twelve-col;
+				}
+			}
+
+			/* 16 Column Grid Offset Left */
+			@for $i from 1 through 15{
+				&.push-left-#{$i} {
+					$twelve-col: ($i/15)*100%;
+					margin-left: $twelve-col;
+				}
+			}
+
+			/* 16 Column Grid Offset Right */
+			@for $i from 1 through 15{
+				&.push-left-#{$i} {
+					$twelve-col: ($i/15)*100%;
+					margin-right: $twelve-col;
+				}
+			}
+
+			/* Percentage Column Grid */
 			@for $i from 1 through 100{
 				&.width-#{$i}-in-pc {
 					width: $i*1%;
@@ -55,8 +93,6 @@
 				&[class*=' width-']{
 					width:100%;
 					float:none;
-					/* margin:0;
-					padding:0; */
 				}
 			}
 		}
@@ -65,5 +101,6 @@
 			clear: both;
 			display: table;
 		}
+			
 	}	
 }
