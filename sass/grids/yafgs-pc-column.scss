@@ -1,0 +1,6 @@
+/* Percentage Column Grid */
+@for $i from 1 through 100{
+	&.width-#{$i}-in-pc {
+		width: $i*1%;
+	}
+}

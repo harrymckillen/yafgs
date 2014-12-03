@@ -3,13 +3,9 @@
 	@author: Harry McKillen
 */
 
-// Include HTML5 Boilerplate CSS - v4.3.0
-@import 'lib/html5bp/main';
-// normalize.css v1.1.3 
-@import 'lib/html5bp/normalize';
 // include yafgs-defaults
-@import 'yafgs-defaults';
+@import 'grids/yafgs-defaults';
 // include yafgs-grid
-@import 'yafgs-grid';
+@import 'grids/yafgs-grid';
 // include example-styles
 @import 'example-styles';

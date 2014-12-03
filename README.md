@@ -4,9 +4,13 @@ It doesn't do anything any other grid system doesn't do.
 
 Based on a 1140px max width, it's a fluid responsive grid system. The idea of it is that it provides a number of different options to hopefully fit a wide variety of project types. It's essentially a mixed grid system, with a few different pattern types; 
 
+## Features
+
 * 12 Column Grid
 * 16 Column Grid
 * % Column Grid
+* HTML5 Boilerplate
+* respond.min.js
 
 ## Installation
 1. Download a copy of the files
@@ -107,6 +111,9 @@ The main HTML structure is as follows, ``` feckin-grid > a-feckin-row > a-feckin
 </div>
 
 ```
+
+## Browser Support
+IE8+, All other modern browsers. I have no desire to make it work on <=IE7.
 
 ## License
 There's no real license, it's free to use wherever, fork, change as you need it. The original Sass files are there. 
