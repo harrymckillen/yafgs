@@ -119,4 +119,4 @@ IE8+, All other modern browsers. I have no desire to make it work on <=IE7.
 There's no real license, it's free to use wherever, fork, change as you need it. The original Sass files are there. 
 
 ## Issues
-Please free to raise issues. I may not be able to fix them right away, but I will try. 
+Please feel free to raise issues. I may not be able to fix them right away, but I will try. 
