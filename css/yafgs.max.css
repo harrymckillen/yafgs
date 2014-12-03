@@ -1,68 +1,641 @@
-/*
-Error: Invalid CSS after "	}": expected "}", was ""
-        on line 22 of sass/example-styles.scss
-        from line 11 of sass/yafgs.scss
-
-17: 		&:after{
-18: 			font-size: $std-font-size - 0.1;
-19: 			display: block;
-20: 			text-align: center;
-21: 		}	
-22: 	}
-
-Backtrace:
-sass/example-styles.scss:22
-sass/yafgs.scss:11
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1163:in `expected'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1099:in `expected'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:1094:in `tok!'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:643:in `block'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:635:in `ruleset'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:660:in `block_child'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:650:in `block_contents'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:117:in `stylesheet'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/scss/parser.rb:42:in `parse'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/engine.rb:393:in `_to_tree'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/engine.rb:299:in `to_tree'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:313:in `block in visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `block in with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:88:in `with_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:312:in `visit_import'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `block in with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:115:in `with_frame'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/stack.rb:79:in `with_base'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `map'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/base.rb:36:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:36:in `css_tree'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:489:in `update_stylesheet'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `each'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:469:in `on_file_changed'
-/var/lib/gems/2.1.0/gems/sass-3.4.8/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `call'
-/usr/lib/ruby/vendor_ruby/listen/listener.rb:150:in `block in _wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `loop'
-/usr/lib/ruby/vendor_ruby/listen/listener.rb:145:in `_wait_for_changes'
-/usr/lib/ruby/vendor_ruby/listen/listener.rb:43:in `block in start'
+/* 
+	Yet Another Feckin' Grid System 
+	@author: Harry McKillen
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"	}\": expected \"}\", was \"\"\A         on line 22 of sass/example-styles.scss\A         from line 11 of sass/yafgs.scss\A \A 17: 		&:after{\A 18: 			font-size: $std-font-size - 0.1;\A 19: 			display: block;\A 20: 			text-align: center;\A 21: 		}	\A 22: 	}"; }
+/* ====== YAFGS Start ====== */
+/* Yet Another Feckin' Grid System */
+.feckin-grid {
+  max-width: 1140px;
+  margin: 10px auto;
+}
+.feckin-grid *,
+.feckin-grid *:after,
+.feckin-grid *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+@media screen and (max-width: 767px) {
+  .feckin-grid {
+    margin: 10px;
+  }
+}
+.feckin-grid .a-feckin-row {
+  display: block;
+  position: relative;
+}
+.feckin-grid .a-feckin-row .a-feckin-column {
+  margin: 10px 0 0 0;
+  float: left;
+  padding: 0 5px;
+}
+.feckin-grid .a-feckin-row .a-feckin-column:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.centered {
+  margin: 0 auto;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-1-in-12 {
+  width: 100%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-2-in-12 {
+  width: 50%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-3-in-12 {
+  width: 33.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-4-in-12 {
+  width: 25%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-5-in-12 {
+  width: 20%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-6-in-12 {
+  width: 16.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-7-in-12 {
+  width: 14.28571%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-8-in-12 {
+  width: 12.5%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-9-in-12 {
+  width: 11.11111%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-10-in-12 {
+  width: 10%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-11-in-12 {
+  width: 9.09091%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-12-in-12 {
+  width: 8.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-1 {
+  margin-left: 8.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-2 {
+  margin-left: 16.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-3 {
+  margin-left: 25%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-4 {
+  margin-left: 33.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-5 {
+  margin-left: 41.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-6 {
+  margin-left: 50%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-7 {
+  margin-left: 58.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-8 {
+  margin-left: 66.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-9 {
+  margin-left: 75%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-10 {
+  margin-left: 83.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-left-11 {
+  margin-left: 91.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-1 {
+  margin-right: 8.33333%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-2 {
+  margin-right: 16.66667%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-3 {
+  margin-right: 25%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-4 {
+  margin-right: 33.33333%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-5 {
+  margin-right: 41.66667%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-6 {
+  margin-right: 50%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-7 {
+  margin-right: 58.33333%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-8 {
+  margin-right: 66.66667%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-9 {
+  margin-right: 75%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-10 {
+  margin-right: 83.33333%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-12-right-11 {
+  margin-right: 91.66667%;
+  float: right;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-1-in-16 {
+  width: 100%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-2-in-16 {
+  width: 50%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-3-in-16 {
+  width: 33.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-4-in-16 {
+  width: 25%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-5-in-16 {
+  width: 20%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-6-in-16 {
+  width: 16.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-7-in-16 {
+  width: 14.28571%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-8-in-16 {
+  width: 12.5%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-9-in-16 {
+  width: 11.11111%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-10-in-16 {
+  width: 10%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-11-in-16 {
+  width: 9.09091%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-12-in-16 {
+  width: 8.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-13-in-16 {
+  width: 7.69231%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-14-in-16 {
+  width: 7.14286%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-15-in-16 {
+  width: 6.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-16-in-16 {
+  width: 6.25%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-1 {
+  margin-left: 6.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-2 {
+  margin-left: 13.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-3 {
+  margin-left: 20%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-4 {
+  margin-left: 26.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-5 {
+  margin-left: 33.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-6 {
+  margin-left: 40%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-7 {
+  margin-left: 46.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-8 {
+  margin-left: 53.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-9 {
+  margin-left: 60%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-10 {
+  margin-left: 66.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-11 {
+  margin-left: 73.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-12 {
+  margin-left: 80%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-13 {
+  margin-left: 86.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-14 {
+  margin-left: 93.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-left-15 {
+  margin-left: 100%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-1 {
+  float: right;
+  margin-right: 6.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-2 {
+  float: right;
+  margin-right: 13.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-3 {
+  float: right;
+  margin-right: 20%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-4 {
+  float: right;
+  margin-right: 26.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-5 {
+  float: right;
+  margin-right: 33.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-6 {
+  float: right;
+  margin-right: 40%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-7 {
+  float: right;
+  margin-right: 46.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-8 {
+  float: right;
+  margin-right: 53.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-9 {
+  float: right;
+  margin-right: 60%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-10 {
+  float: right;
+  margin-right: 66.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-11 {
+  float: right;
+  margin-right: 73.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-12 {
+  float: right;
+  margin-right: 80%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-13 {
+  float: right;
+  margin-right: 86.66667%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-14 {
+  float: right;
+  margin-right: 93.33333%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.nudge-16-right-15 {
+  float: right;
+  margin-right: 100%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-1-in-pc {
+  width: 1%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-2-in-pc {
+  width: 2%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-3-in-pc {
+  width: 3%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-4-in-pc {
+  width: 4%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-5-in-pc {
+  width: 5%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-6-in-pc {
+  width: 6%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-7-in-pc {
+  width: 7%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-8-in-pc {
+  width: 8%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-9-in-pc {
+  width: 9%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-10-in-pc {
+  width: 10%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-11-in-pc {
+  width: 11%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-12-in-pc {
+  width: 12%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-13-in-pc {
+  width: 13%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-14-in-pc {
+  width: 14%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-15-in-pc {
+  width: 15%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-16-in-pc {
+  width: 16%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-17-in-pc {
+  width: 17%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-18-in-pc {
+  width: 18%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-19-in-pc {
+  width: 19%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-20-in-pc {
+  width: 20%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-21-in-pc {
+  width: 21%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-22-in-pc {
+  width: 22%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-23-in-pc {
+  width: 23%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-24-in-pc {
+  width: 24%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-25-in-pc {
+  width: 25%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-26-in-pc {
+  width: 26%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-27-in-pc {
+  width: 27%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-28-in-pc {
+  width: 28%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-29-in-pc {
+  width: 29%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-30-in-pc {
+  width: 30%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-31-in-pc {
+  width: 31%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-32-in-pc {
+  width: 32%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-33-in-pc {
+  width: 33%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-34-in-pc {
+  width: 34%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-35-in-pc {
+  width: 35%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-36-in-pc {
+  width: 36%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-37-in-pc {
+  width: 37%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-38-in-pc {
+  width: 38%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-39-in-pc {
+  width: 39%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-40-in-pc {
+  width: 40%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-41-in-pc {
+  width: 41%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-42-in-pc {
+  width: 42%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-43-in-pc {
+  width: 43%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-44-in-pc {
+  width: 44%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-45-in-pc {
+  width: 45%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-46-in-pc {
+  width: 46%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-47-in-pc {
+  width: 47%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-48-in-pc {
+  width: 48%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-49-in-pc {
+  width: 49%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-50-in-pc {
+  width: 50%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-51-in-pc {
+  width: 51%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-52-in-pc {
+  width: 52%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-53-in-pc {
+  width: 53%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-54-in-pc {
+  width: 54%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-55-in-pc {
+  width: 55%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-56-in-pc {
+  width: 56%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-57-in-pc {
+  width: 57%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-58-in-pc {
+  width: 58%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-59-in-pc {
+  width: 59%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-60-in-pc {
+  width: 60%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-61-in-pc {
+  width: 61%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-62-in-pc {
+  width: 62%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-63-in-pc {
+  width: 63%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-64-in-pc {
+  width: 64%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-65-in-pc {
+  width: 65%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-66-in-pc {
+  width: 66%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-67-in-pc {
+  width: 67%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-68-in-pc {
+  width: 68%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-69-in-pc {
+  width: 69%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-70-in-pc {
+  width: 70%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-71-in-pc {
+  width: 71%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-72-in-pc {
+  width: 72%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-73-in-pc {
+  width: 73%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-74-in-pc {
+  width: 74%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-75-in-pc {
+  width: 75%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-76-in-pc {
+  width: 76%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-77-in-pc {
+  width: 77%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-78-in-pc {
+  width: 78%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-79-in-pc {
+  width: 79%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-80-in-pc {
+  width: 80%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-81-in-pc {
+  width: 81%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-82-in-pc {
+  width: 82%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-83-in-pc {
+  width: 83%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-84-in-pc {
+  width: 84%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-85-in-pc {
+  width: 85%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-86-in-pc {
+  width: 86%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-87-in-pc {
+  width: 87%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-88-in-pc {
+  width: 88%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-89-in-pc {
+  width: 89%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-90-in-pc {
+  width: 90%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-91-in-pc {
+  width: 91%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-92-in-pc {
+  width: 92%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-93-in-pc {
+  width: 93%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-94-in-pc {
+  width: 94%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-95-in-pc {
+  width: 95%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-96-in-pc {
+  width: 96%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-97-in-pc {
+  width: 97%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-98-in-pc {
+  width: 98%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-99-in-pc {
+  width: 99%;
+}
+.feckin-grid .a-feckin-row .a-feckin-column.width-100-in-pc {
+  width: 100%;
+}
+@media screen and (max-width: 767px) {
+  .feckin-grid .a-feckin-row .a-feckin-column[class*=' width-'] {
+    width: 100%;
+    float: none;
+  }
+}
+.feckin-grid .a-feckin-row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body h1 {
+  margin: 20px 0;
+}
+body h2 {
+  margin: 40px 0 10px 0;
+}
+body .content {
+  font-size: 0.8em;
+  border: 1px solid #ddd;
+  background: #f2f2f2;
+  min-height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+body .content:after {
+  font-size: 0.7em;
+  display: block;
+  text-align: center;
+}
+
+/*# sourceMappingURL=yafgs.max.css.map */

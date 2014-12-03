@@ -1,26 +1,24 @@
-/* 16 Column Grid Widths */
+// 16 Column Grid Widths
 @for $i from 1 through 16{
 	&.width-#{$i}-in-16 {
 		$sixteen-col: (16/($i*16))*100%;
 		width: $sixteen-col;
-		/* .content:after{
-			content: "(#{$sixteen-col})";
-		} */
 	}
 }
 
-/* 16 Column Grid Nudge Left */
+// 16 Column Grid Nudge Left
 @for $i from 1 through 15{
-	&.nudge-left-#{$i} {
+	&.nudge-16-left-#{$i} {
 		$twelve-col: ($i/15)*100%;
 		margin-left: $twelve-col;
 	}
 }
 
-/* 16 Column Grid Nudge Right */
+// 16 Column Grid Nudge Right
 @for $i from 1 through 15{
-	&.nudge-right-#{$i} {
+	&.nudge-16-right-#{$i} {
 		$twelve-col: ($i/15)*100%;
+		float:right;
 		margin-right: $twelve-col;
 	}
 }

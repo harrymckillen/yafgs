@@ -1,26 +1,24 @@
-/* 12 Column Grid Widths */
+//12 Column Grid Widths
 @for $i from 1 through 12{
 	&.width-#{$i}-in-12 {
 		$twelve-col: (12/($i*12))*100%;
 		width: $twelve-col;
-		/* .content:after{
-			content: "(#{$twelve-col})";
-		} */
 	}
 }
 
-/* 12 Column Grid Nudge Left */
+//12 Column Grid Nudge Left
 @for $i from 1 through 11{
-	&.nudge-left-#{$i} {
+	&.nudge-12-left-#{$i} {
 		$twelve-col: ($i/12)*100%;
 		margin-left: $twelve-col;
 	}
 }			
 
-/* 12 Column Grid Nudge Right */
+//12 Column Grid Nudge Right
 @for $i from 1 through 11{
-	&.nudge-right-#{$i} {
+	&.nudge-12-right-#{$i} {
 		$twelve-col: ($i/12)*100%;
 		margin-right: $twelve-col;
+		float:right;
 	}
 }

@@ -6,7 +6,9 @@ body{
 	h2{
 		margin: ($std-margin*4) 0 $std-margin 0;
 	}
-
+	.outline{
+		// border: 1px solid #ccc;
+	}
 	.content{
 		font-size: $std-font-size;
 		border:1px solid #ddd;
@@ -20,3 +22,4 @@ body{
 			text-align: center;
 		}	
 	}
+}
