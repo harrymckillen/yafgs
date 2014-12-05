@@ -7,7 +7,7 @@
 }
 
 // 16 Column Grid Nudge Left
-@for $i from 1 through 15{
+@for $i from 1 through 14{
 	&.nudge-16-left-#{$i} {
 		$twelve-col: ($i/15)*100%;
 		margin-left: $twelve-col;
@@ -15,7 +15,7 @@
 }
 
 // 16 Column Grid Nudge Right
-@for $i from 1 through 15{
+@for $i from 1 through 14{
 	&.nudge-16-right-#{$i} {
 		$twelve-col: ($i/15)*100%;
 		float:right;

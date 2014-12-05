@@ -1,3 +1,5 @@
+@import 'grids/yafgs-defaults';
+
 body{
 	font-family: Arial, Helvetica, sans-serif;
 	h1{
@@ -7,7 +9,7 @@ body{
 		margin: ($std-margin*4) 0 $std-margin 0;
 	}
 	.outline{
-		// border: 1px solid #ccc;
+		border: 1px solid #ccc;
 	}
 	.content{
 		padding:0.5em;

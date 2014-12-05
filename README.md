@@ -110,6 +110,20 @@ The main HTML structure is as follows, ``` feckin-grid > a-feckin-row > a-feckin
 </div>
 
 ```
+### Positioning Columns 
+There are a couple of classes available for the position of columns within the grid, with the ability to center, or nudge (left or right) columns. 
+
+`centered`
+
+A centered class can be applied to a column like so. However, it will cause all other columns in that row to float beneath it. 
+ 
+```
+	<div class="a-feckin-row">
+		<div class="a-feckin-column width-12-in-12 centered">
+			<div class="content"> Centered 12</div>
+		</div>
+	</div>
+```
 
 ## Browser Support
 IE8+, All other modern browsers. I have no desire to make it work on <=IE7.
