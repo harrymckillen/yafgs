@@ -10,7 +10,7 @@ Based on a 1140px max width, it's a fluid responsive grid system. The idea of it
 * ~ 31Kb in size
 
 ## Installation
-*Download a copy of the files
+* Download a copy of the files
 * Build the Sass files yourself, or include one of the pre-compiled CSS file into your project (min or max). 
 
 `
