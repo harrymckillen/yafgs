@@ -4,6 +4,9 @@ It doesn't do anything any other grid system doesn't do.
 
 Based on a 1140px max width, it's a fluid responsive grid system. The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types. 
 
+## Version
+* Currently on v 1.0.0
+
 ## Features
 
 * Flexible grid system
@@ -190,3 +193,6 @@ There's no real license, it's free to use wherever, fork, change as you need it.
 
 ## Issues
 Please feel free to raise issues. I may not be able to fix them right away, but I will try. 
+
+## Why?
+For no other reason that I wanted to create something I can use in my projects, whilst defining my own nomenclature, as sometimes I just find some of the Grid Systems boring and complicated looking.
