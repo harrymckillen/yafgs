@@ -4,6 +4,9 @@ It doesn't do anything any other grid system doesn't do.
 
 Based on a 1140px max width, it's a fluid responsive grid system. The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types. 
 
+## Demo
+If you wish to [see the Grid System in action](http://demos.wolfhound.ie/yafgs/demo.html), check out the demo page. Where possible I've tried to display the many examples of what the GS can do. However, you can also mix and match the different types of demos, so that there is a near endless list of combinations you can achieve, which will hopefully cover the majority of use cases. 
+
 ## Features
 
 * Flexible grid system
