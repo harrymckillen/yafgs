@@ -1,4 +1,4 @@
-@import 'grids/yafgs-defaults';
+@import '../grids/_yafgs-defaults';
 
 body{
 	font-family: Arial, Helvetica, sans-serif;
@@ -23,6 +23,6 @@ body{
 			font-size: $std-font-size - 0.1;
 			display: block;
 			text-align: center;
-		}	
+		}
 	}
 }

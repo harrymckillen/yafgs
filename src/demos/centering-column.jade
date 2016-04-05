@@ -1,0 +1,14 @@
+extends ../templates/html.jade
+
+block title
+  title Centering Columns | Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+
+    include ../templates/mixins/columns.jade
+
+    h1 Centering Columns
+    +columns(1, 12, true)
+    +columns(2, 12, true)
+    +columns(3, 12, true)

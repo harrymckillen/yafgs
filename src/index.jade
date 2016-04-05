@@ -1,0 +1,33 @@
+extends templates/html.jade
+
+block title
+  title Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+    include templates/mixins/columns.jade
+
+    h1 Yet another feckin' grid system
+
+    h2 Demos
+    p
+      a(href="demos/12-column.html") 12-Columns
+    p
+      a(href="demos/12-column-nudge-left.html") 12-Columns Nudge Left
+    p
+      a(href="demos/12-column-nudge-right.html") 12-Columns Nudge Right
+    p
+      a(href="demos/16-column.html") 16-Columns
+    p
+      a(href="demos/16-column-nudge-left.html") 16-Columns Nudge Left
+    p
+      a(href="demos/16-column-nudge-right.html") 16-Columns Nudge Right
+    p
+      a(href="demos/pc-column.html") %-Columns
+    p
+      a(href="demos/pc-column-nudge-left.html") %-Columns Nudge Left
+    p
+      a(href="demos/pc-column-nudge-right.html") %-Columns Nudge Right
+    p
+      a(href="demos/centering-column.html") Centering Columns
+

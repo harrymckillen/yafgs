@@ -1,0 +1,23 @@
+extends ../templates/html.jade
+
+block title
+  title 12-Column | Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+
+    include ../templates/mixins/columns.jade
+
+    h1 12-Column
+    +columns(1, 12)
+    +columns(2, 12)
+    +columns(3, 12)
+    +columns(4, 12)
+    +columns(5, 12)
+    +columns(6, 12)
+    +columns(7, 12)
+    +columns(8, 12)
+    +columns(9, 12)
+    +columns(10, 12)
+    +columns(11, 12)
+    +columns(12, 12)

@@ -1,0 +1,15 @@
+extends ../templates/html.jade
+
+block title
+  title %-Column Nudge Right | Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+
+    include ../templates/mixins/columns.jade
+
+    h1 %-Column Nudge Right
+    - for (var z = 1; z < 100; z++)
+      div.a-feckin-row
+        div(class="a-feckin-column width-12-in-pc nudge-pc-right-"+z)
+          div.content % Nudge Right #{z}%

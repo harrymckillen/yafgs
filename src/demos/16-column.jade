@@ -1,0 +1,27 @@
+extends ../templates/html.jade
+
+block title
+  title 16-Column | Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+
+    include ../templates/mixins/columns.jade
+
+    h1 16-Column
+    +columns(1, 16)
+    +columns(2, 16)
+    +columns(3, 16)
+    +columns(4, 16)
+    +columns(5, 16)
+    +columns(6, 16)
+    +columns(7, 16)
+    +columns(8, 16)
+    +columns(9, 16)
+    +columns(10, 16)
+    +columns(11, 16)
+    +columns(12, 16)
+    +columns(13, 16)
+    +columns(14, 16)
+    +columns(15, 16)
+    +columns(16, 16)

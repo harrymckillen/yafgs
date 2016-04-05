@@ -1,0 +1,15 @@
+extends ../templates/html.jade
+
+block title
+  title %-Column | Yet Another Feckin' Grid System
+
+block content
+  div.feckin-grid
+
+    include ../templates/mixins/columns.jade
+
+    h1 %-Columns
+    - for (var y = 100; y > 0; y--)
+      div.a-feckin-row
+        div(class="a-feckin-column width-"+y+"-in-pc")
+          div.content= y
