@@ -10,11 +10,11 @@ If you wish to see the Grid System in action, check out <a href="http://yafgs.wo
 ## Features
 
 * Flexible grid system
-* ~ 31Kb in size
+* ~ 28Kb in size
 
 ## Installation
-* Download a copy of the files
-* Build the Sass files yourself, or include one of the pre-compiled CSS file into your project (min or max). 
+* Download the build(version).zip
+* Include one of the pre-compiled CSS file into your project (min or max). 
 
 `
 <link rel="stylesheet" href="css/yafgs.max.css">
