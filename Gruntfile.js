@@ -100,6 +100,16 @@ module.exports = function (grunt) {
     watch: {
       files: ['src/**/*'],
       tasks: ['build']
+    },
+    compress: {
+      build: {
+        options: {
+          archive: 'build.<%= pkg.version %>.zip'
+        },
+        files: [
+          {flatten: true, src: ['build/css/*'], filter: 'isFile'} // flattens results to a single level
+        ]
+      }
     }
   });
 
@@ -121,7 +131,8 @@ module.exports = function (grunt) {
       'clean:build',
       'sass',
       'copy:build',
-      'jade:build'
+      'jade:build',
+      'compress:build'
     ]);
   grunt.registerTask('wipe',
     [
