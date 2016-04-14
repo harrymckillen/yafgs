@@ -4,12 +4,12 @@ block title
   title 12-Column Nudge Right | Yet Another Feckin' Grid System
 
 block content
-  div.feckin-grid
+  div.the-grid
 
     include ../templates/mixins/columns.jade
 
     h1 12-Column Nudge Right
     - for (var z = 1; z < 12; z++)
-      div.a-feckin-row
-        div(class="a-feckin-column width-12-in-12 nudge-12-right-"+z)
+      div.a-row
+        div(class="a-column width-12-in-12 nudge-12-right-"+z)
           div.content Nudge Right #{z}

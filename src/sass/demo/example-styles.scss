@@ -9,8 +9,6 @@ $body-font: Arial, Helvetica, sans-serif;
 
 
 body{
-  overflow-y: auto;
-  overflow-x: hidden;
   font-size: 0.9em;
 	font-family: $body-font;
   color: $main-font-colour;
@@ -46,19 +44,29 @@ body{
 		}
 	}
   .github-ribbon {
-    line-height: 25px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    transform: rotate(45deg);
+    width: 123px;
     display: block;
     position: absolute;
-    right: -35px;
-    background: #D3D3D3;
-    width: 175px;
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    height: 123px;
+    a{
+      width: 174px;
+      top: 40px;
+      display: block;
+      background: #D3D3D3;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      line-height: 25px;
+      text-align: center;
+      text-decoration: none;
+      font-weight: bold;
+      position: absolute;
+      right: -37px;
+    }
   }
 }

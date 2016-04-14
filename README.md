@@ -25,22 +25,22 @@ OR
 * Voila, build your site/app/theme based on the structure. 
 
 ## Usage
-There are a couple of ways to use it. The main HTML structure is as follows, ``` feckin-grid > a-feckin-row > a-feckin-column ```. Below this, different CSS properties can be applied with the use of simple chained classes.
+There are a couple of ways to use it. The main HTML structure is as follows, ``` the-grid > a-row > a-column ```. Below this, different CSS properties can be applied with the use of simple chained classes.
 
 ***
 
 
 ```
-<body class="feckin-grid">
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-XX-in-XX">
+<body class="the-grid">
+	<div class="a-row">
+		<div class="a-column width-XX-in-XX">
 			<div class="content">1</div>
 		</div>
 
 		...
 
-		<div class="a-feckin-row">
-			<div class="a-feckin-column width-XX-in-pc">
+		<div class="a-row">
+			<div class="a-column width-XX-in-pc">
 				<div class="content">XX</div>
 			</div>
 		</div>            
@@ -50,68 +50,68 @@ There are a couple of ways to use it. The main HTML structure is as follows, ```
 
 ### 12-Column Grid
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-1-in-12"><div class="content">1</div></div>            
+	<div class="a-row">
+		<div class="a-column width-1-in-12"><div class="content">1</div></div>            
 	</div>
 
 	...
 
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-feckin-column width-12-in-12"><div class="content">12</div></div>            
+	<div class="a-row">
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
 	</div>
 ```
 
 ### 16-Column Grid
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-1-in-16"><div class="content">1</div></div>            
+	<div class="a-row">
+		<div class="a-column width-1-in-16"><div class="content">1</div></div>            
 	</div>
 
 	...
 
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>           
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>           
-		<div class="a-feckin-column width-16-in-16"><div class="content">16</div></div>           
+	<div class="a-row">
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
+		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
 	</div>
 ```
 
 ### %-Column Grid
 ```
-<div class="a-feckin-row">
-	<div class="a-feckin-column width-100-in-pc">
+<div class="a-row">
+	<div class="a-column width-100-in-pc">
 		<div class="content">100</div>
 	</div>
 </div>
 
 ...
 
-<div class="a-feckin-row">
-	<div class="a-feckin-column width-1-in-pc">
+<div class="a-row">
+	<div class="a-column width-1-in-pc">
 		<div class="content">1</div>
 	</div>
 </div>
@@ -125,8 +125,8 @@ There are a couple of classes available for the position of columns within the g
 A centered class can be applied to a column like so. However, it will cause all other columns in that row to float beneath it. 
 
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-12-in-12 centered">
+	<div class="a-row">
+		<div class="a-column width-12-in-12 centered">
 			<div class="content"> Centered 12</div>
 		</div>
 	</div>
@@ -139,16 +139,16 @@ There a few options for nudging.
 Uses the class `nudge-12-left-xx` or `nudge-12-right-xx` (where xx is from 1...11).
 
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-12-in-12 nudge-12-(left|right)-1">
+	<div class="a-row">
+		<div class="a-column width-12-in-12 nudge-12-(left|right)-1">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>
 
 	...
 
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-12-in-12 nudge-12-(left|right)-11">
+	<div class="a-row">
+		<div class="a-column width-12-in-12 nudge-12-(left|right)-11">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>	
@@ -158,16 +158,16 @@ Uses the class `nudge-12-left-xx` or `nudge-12-right-xx` (where xx is from 1...1
 Uses the class `nudge-16-left-xx` or `nudge-16-right-xx` (where xx is from 1...14).
 
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-16-in-16 nudge-16-(left|right)-1">
+	<div class="a-row">
+		<div class="a-column width-16-in-16 nudge-16-(left|right)-1">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>
 
 	...
 
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-16-in-16 nudge-16-(left|right)-14">
+	<div class="a-row">
+		<div class="a-column width-16-in-16 nudge-16-(left|right)-14">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>	
@@ -177,8 +177,8 @@ Uses the class `nudge-16-left-xx` or `nudge-16-right-xx` (where xx is from 1...1
 Uses the class `nudge-pc-left-xx` or `nudge-pc-right-xx` (where xx is from 1...99). This is meant to be as flexible as possible, using the 99% nudge will obviously push any elements beyond the width of the containing element. 
 
 ```
-	<div class="a-feckin-row">
-		<div class="a-feckin-column width-xx-in-xx nudge-pc-left-1">
+	<div class="a-row">
+		<div class="a-column width-xx-in-xx nudge-pc-left-1">
 			<div class="content"> Nudge 1% Left </div>
 		</div>
 	</div>

@@ -2,7 +2,7 @@
 
 // default grid setup values
 
-.feckin-grid{
+.the-grid{
   *,
   *:after,
   *:before {
@@ -15,10 +15,10 @@
   @media screen and (max-width: 767px) {
     margin: $std-margin;
   }
-  .a-feckin-row{
+  .a-row{
     display: block;
     position: relative;
-    .a-feckin-column{
+    .a-column{
       margin: $std-margin 0 0 0;
       float:left;
       padding: 0 ($std-padding/2);
