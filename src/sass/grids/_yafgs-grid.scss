@@ -49,6 +49,11 @@
           width:100%;
           float:none;
         }
+        &[class*='nudge-']{
+          margin-left: 0;
+          margin-right: 0;
+          float:none;
+        }
       }
     }
     &:after{
