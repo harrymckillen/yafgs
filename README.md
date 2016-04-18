@@ -46,7 +46,7 @@ There are a couple of ways to use it. The main HTML structure is as follows, ```
 </body>
 ```
 
-### Medium 800px Grid
+### Small 800px Grid
 ```
 <body class="the-grid small">
 </body>
