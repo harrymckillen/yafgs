@@ -2,7 +2,12 @@
 
 It doesn't do anything any other grid system doesn't do. 
 
-Based on a 1140px max width, it's a fluid responsive grid system. The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types. 
+The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types. 
+
+There are 3 main grid widths:
+* Large - 1140px max width (default)
+* Medium - 960px max width
+* Small - 800px max width
 
 ## Demo
 If you wish to see the Grid System in action, check out <a href="http://yafgs.wolfhound.ie/" target="_blank">the demo page</a>. Where possible I've tried to display the many examples of what the GS can do. However, you can also mix and match the different types of demos, so that there is a near endless list of combinations you can achieve, which will hopefully cover the majority of use cases. 
@@ -29,74 +34,73 @@ There are a couple of ways to use it. The main HTML structure is as follows, ```
 
 ***
 
-
+### Default 1140px Grid
 ```
 <body class="the-grid">
-	<div class="a-row">
-		<div class="a-column width-XX-in-XX">
-			<div class="content">1</div>
-		</div>
+</body>
+```
 
-		...
+### Medium 960px Grid
+```
+<body class="the-grid medium">
+</body>
+```
 
-		<div class="a-row">
-			<div class="a-column width-XX-in-pc">
-				<div class="content">XX</div>
-			</div>
-		</div>            
-	</div>
+### Medium 800px Grid
+```
+<body class="the-grid small">
 </body>
 ```
 
 ### 12-Column Grid
 ```
 	<div class="a-row">
-		<div class="a-column width-1-in-12"><div class="content">1</div></div>            
+		<div class="a-column width-1-of-12"><div class="content">1</div></div>            
 	</div>
 
 	...
 
 	<div class="a-row">
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
-		<div class="a-column width-12-in-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
+		<div class="a-column width-12-of-12"><div class="content">12</div></div>            
 	</div>
 ```
 
 ### 16-Column Grid
 ```
 	<div class="a-row">
-		<div class="a-column width-1-in-16"><div class="content">1</div></div>            
+		<div class="a-column width-1-of-16"><div class="content">1</div></div>            
 	</div>
 
 	...
 
 	<div class="a-row">
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>            
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
-		<div class="a-column width-16-in-16"><div class="content">16</div></div>           
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>            
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>           
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>           
+		<div class="a-column width-16-of-16"><div class="content">16</div></div>           
 	</div>
 ```
 
@@ -126,7 +130,7 @@ A centered class can be applied to a column like so. However, it will cause all 
 
 ```
 	<div class="a-row">
-		<div class="a-column width-12-in-12 centered">
+		<div class="a-column width-12-of-12 centered">
 			<div class="content"> Centered 12</div>
 		</div>
 	</div>
@@ -140,7 +144,7 @@ Uses the class `nudge-12-left-xx` or `nudge-12-right-xx` (where xx is from 1...1
 
 ```
 	<div class="a-row">
-		<div class="a-column width-12-in-12 nudge-12-(left|right)-1">
+		<div class="a-column width-12-of-12 nudge-12-(left|right)-1">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>
@@ -148,7 +152,7 @@ Uses the class `nudge-12-left-xx` or `nudge-12-right-xx` (where xx is from 1...1
 	...
 
 	<div class="a-row">
-		<div class="a-column width-12-in-12 nudge-12-(left|right)-11">
+		<div class="a-column width-12-of-12 nudge-12-(left|right)-11">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>	
@@ -159,7 +163,7 @@ Uses the class `nudge-16-left-xx` or `nudge-16-right-xx` (where xx is from 1...1
 
 ```
 	<div class="a-row">
-		<div class="a-column width-16-in-16 nudge-16-(left|right)-1">
+		<div class="a-column width-16-of-16 nudge-16-(left|right)-1">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>
@@ -167,7 +171,7 @@ Uses the class `nudge-16-left-xx` or `nudge-16-right-xx` (where xx is from 1...1
 	...
 
 	<div class="a-row">
-		<div class="a-column width-16-in-16 nudge-16-(left|right)-14">
+		<div class="a-column width-16-of-16 nudge-16-(left|right)-14">
 			<div class="content"> Nudge Left 1</div>
 		</div>
 	</div>	

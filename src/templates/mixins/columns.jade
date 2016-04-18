@@ -2,11 +2,8 @@ mixin columns(number, column, centered)
   div.a-row
     - for (var x = 1; x < number+1; x++)
       if centered
-        div(class="a-column centered width-"+number+"-in-"+column)
-          div.content= number
-      else if nudge
-        div(class="a-column centered width-"+number+"-in-"+column)
+        div(class="a-column centered width-"+number+"-of-"+column)
           div.content= number
       else
-        div(class="a-column width-"+number+"-in-"+column)
+        div(class="a-column width-"+number+"-of-"+column)
           div.content= number

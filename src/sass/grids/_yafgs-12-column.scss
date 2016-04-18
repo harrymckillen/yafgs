@@ -1,6 +1,6 @@
 //12 Column Grid Widths
 @for $i from 1 through 12{
-  &.width-#{$i}-in-12 {
+  &.width-#{$i}-of-12 {
     $twelve-col: (12/($i*12))*100%;
     width: $twelve-col;
   }

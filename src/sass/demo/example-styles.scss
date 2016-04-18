@@ -5,18 +5,21 @@ $main-background-colour: #330033;
 $main-font-colour: #ff6600;
 
 // fonts
+$heading-font: Arial, Helvetica, sans-serif;
 $body-font: Arial, Helvetica, sans-serif;
 
-
 body{
-  font-size: 0.9em;
-	font-family: $body-font;
+  font-size: 1.3em;
+  font-family: $body-font;
   color: $main-font-colour;
   background: $main-background-colour;
   margin-bottom: $std-margin * 5;
+  h1, h2, h3, h4, h5, h6{
+	  font-family: $heading-font;
+  }
 	h1{
 		// margin: ($std-margin*2) 0;
-    font-size: 4em;
+    font-size: 3em;
 	}
 	h2{
 		margin: ($std-margin*4) 0 $std-margin 0;
@@ -32,7 +35,7 @@ body{
     color: $main-background-colour;
 		padding:0.5em;
 		font-size: $std-font-size;
-		border:1px solid #ddd;
+		// border:1px solid #ddd;
 		background: #f2f2f2;
 		min-height: $std-margin * 3;
 		text-align: center;
@@ -52,6 +55,7 @@ body{
     right: 0;
     height: 123px;
     a{
+      font-size: 0.7em;
       width: 174px;
       top: 40px;
       display: block;
@@ -68,5 +72,21 @@ body{
       position: absolute;
       right: -37px;
     }
+  }
+  .button {
+    display: block;
+    float:left;
+    border:3px solid $main-font-colour;
+    border-radius:3px;
+    padding: 1em 2em;
+    margin:0.4em 1em 0.4em 0;
+    text-decoration: none;
+    span {
+      font-size: 0.7em;
+    }
+  }
+  .copyright{
+    margin-top: 30px;
+    text-align:center;
   }
 }

@@ -10,8 +10,14 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
   }
-  max-width: $grid-max-width;
+  max-width: $grid-max-width-lrg;
   margin: $std-margin auto;
+  &.medium{
+    max-width: $grid-max-width-med;
+  }
+  &.small{
+    max-width: $grid-max-width-sml;
+  }
   @media screen and (max-width: 767px) {
     margin: $std-margin;
   }
@@ -39,10 +45,8 @@
       // include yafgs-16-column
       @import '_yafgs-16-column';
 
-
       // include yafgs-%-column
       @import '_yafgs-pc-column';
-
 
       @media screen and (max-width: 767px) {
         &[class*=' width-']{
@@ -61,6 +65,5 @@
       clear: both;
       display: table;
     }
-
   }
 }

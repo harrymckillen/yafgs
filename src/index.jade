@@ -4,39 +4,60 @@ block title
   title Yet Another Feckin' Grid System
 
 block content
-  div.the-grid
+  div.the-grid.small
     include templates/mixins/columns.jade
 
     span(class="github-ribbon")
       a(href="https://github.com/harrymckillen/yafgs" target="_blank") Fork on GitHub
+    div.a-row
+      div.a-column.width-1-of-12
+        h1
+          | yet <br>
+          | another <br>
+          | feckin' <br>
+          | grid <br>
+          | system <br>
 
-    h1
-      | yet <br>
-      | another <br>
-      | feckin' <br>
-      | grid <br>
-      | system <br>
+    div.a-row
+      div.a-column.width-1-of-12
+        p
+          a(href="build.#{version}.zip" class="button") Download &nbsp;
+            span (v.#{version})
+          a(href="https://github.com/harrymckillen/yafgs/blob/master/README.md" class="button") View README
 
-    h2 Demos
-    p
-      a(href="demos/12-column.html") 12-Columns
-    p
-      a(href="demos/12-column-nudge-left.html") 12-Columns Nudge Left
-    p
-      a(href="demos/12-column-nudge-right.html") 12-Columns Nudge Right
-    p
-      a(href="demos/16-column.html") 16-Columns
-    p
-      a(href="demos/16-column-nudge-left.html") 16-Columns Nudge Left
-    p
-      a(href="demos/16-column-nudge-right.html") 16-Columns Nudge Right
-    p
-      a(href="demos/pc-column.html") %-Columns
-    p
-      a(href="demos/pc-column-nudge-left.html") %-Columns Nudge Left
-    p
-      a(href="demos/pc-column-nudge-right.html") %-Columns Nudge Right
-    p
-      a(href="demos/centering-column.html") Centering Columns
+    div.a-row
+      div.a-column.width-1-of-12
+        h2 What is it?
+        p It doesn't do anything any other grid system doesn't do.
 
-    //- span &copy; Harry McKillen, 2016
+        p The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types.
+
+        p There are 3 main grid widths:
+        ul
+          li Large - 1140px max width
+          li Medium - 960px max width
+          li Small - 800px max width
+
+        h2 Demos
+        p
+          a(href="demos/12-column.html") 12-Columns
+        p
+          a(href="demos/12-column-nudge-left.html") 12-Columns Nudge Left
+        p
+          a(href="demos/12-column-nudge-right.html") 12-Columns Nudge Right
+        p
+          a(href="demos/16-column.html") 16-Columns
+        p
+          a(href="demos/16-column-nudge-left.html") 16-Columns Nudge Left
+        p
+          a(href="demos/16-column-nudge-right.html") 16-Columns Nudge Right
+        p
+          a(href="demos/pc-column.html") %-Columns
+        p
+          a(href="demos/pc-column-nudge-left.html") %-Columns Nudge Left
+        p
+          a(href="demos/pc-column-nudge-right.html") %-Columns Nudge Right
+        p
+          a(href="demos/centering-column.html") Centering Columns
+
+        //- span &copy; Harry McKillen, 2016

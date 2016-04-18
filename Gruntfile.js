@@ -5,9 +5,12 @@
 module.exports = function (grunt) {
   'use script';
 
+  var pkg = grunt.file.readJSON('package.json');
+  console.log('Buidling Version: '+ pkg.version);
+
   // Configs
   grunt.initConfig({
-    pkg: grunt.file.readJSON('package.json'),
+
     hosts: grunt.file.readJSON('hosts.json'),
     ftp_push: {
       dev: {
@@ -27,6 +30,11 @@ module.exports = function (grunt) {
       build: {
         files: [
           {expand: true, cwd: 'src/', src: ['js/**'], dest: 'build/'}
+        ]
+      },
+      buildzip: {
+        files: [
+          { src: ['build.'+pkg.version+'.zip'], dest: 'build/' }
         ]
       }
     },
@@ -79,7 +87,12 @@ module.exports = function (grunt) {
     jade: {
       build: {
         options: {
-          pretty: true
+          pretty: true,
+          data: function() {
+            return {
+              version: pkg.version
+            };
+          }
         },
         files: [
           {
@@ -104,7 +117,7 @@ module.exports = function (grunt) {
     compress: {
       build: {
         options: {
-          archive: 'build.<%= pkg.version %>.zip'
+          archive: 'build.'+pkg.version+'.zip'
         },
         files: [
           {flatten: true, src: ['build/css/*'], filter: 'isFile'} // flattens results to a single level
@@ -132,7 +145,8 @@ module.exports = function (grunt) {
       'sass',
       'copy:build',
       'jade:build',
-      'compress:build'
+      'compress:build',
+      'copy:buildzip'
     ]);
   grunt.registerTask('wipe',
     [

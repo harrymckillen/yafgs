@@ -1,6 +1,6 @@
 // 16 Column Grid Widths
 @for $i from 1 through 16{
-  &.width-#{$i}-in-16 {
+  &.width-#{$i}-of-16 {
     $sixteen-col: (16/($i*16))*100%;
     width: $sixteen-col;
   }
