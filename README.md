@@ -9,8 +9,8 @@ There are 3 main grid widths:
 * Medium - 960px max width
 * Small - 800px max width
 
-## Demo
-If you wish to see the Grid System in action, check out <a href="http://yafgs.wolfhound.ie/" target="_blank">the demo page</a>. Where possible I've tried to display the many examples of what the GS can do. However, you can also mix and match the different types of demos, so that there is a near endless list of combinations you can achieve, which will hopefully cover the majority of use cases. 
+## See it in action
+If you wish to see the Grid System in action, check out <a href="http://yafgs.wolfhound.ie/" target="_blank">yafgs.wolfhound.ie</a>. 
 
 ## Features
 
