@@ -1,5 +1,16 @@
 #Yet another feckin' grid system
 
+* [Introduction](#introduction)
+* [See it in action](#see-it-in-action)
+* [Features](#features)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Browser Support](#browser-support)
+* [License](#license)
+* [Issues](#issues)
+
+## Introduction
+
 It doesn't do anything any other grid system doesn't do. 
 
 The idea of it is that it provides a number of different options to hopefully fit a wide variety of needs. It's essentially a mixed grid system, with a few different pattern types. 
@@ -121,10 +132,10 @@ There are a couple of ways to use it. The main HTML structure is as follows, ```
 </div>
 
 ```
-## Positioning Columns 
+### Positioning Columns 
 There are a couple of classes available for the position of columns within the grid, with the ability to center, or nudge (left or right) columns. 
 
-### Centering
+#### Centering
 
 A centered class can be applied to a column like so. However, it will cause all other columns in that row to float beneath it. 
 
