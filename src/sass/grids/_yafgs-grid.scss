@@ -12,16 +12,13 @@
   }
   max-width: $grid-max-width-lrg;
   margin: $std-margin auto;
-  // padding-left:
+  padding: 0 $std-margin;
   &.medium{
     max-width: $grid-max-width-med;
   }
   &.small{
     max-width: $grid-max-width-sml;
   }
-  /* @media screen and (max-width: 767px) {
-    margin: $std-margin;
-  } */
   .a-row{
     display: block;
     position: relative;
