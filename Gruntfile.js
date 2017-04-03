@@ -158,7 +158,10 @@ module.exports = function (grunt) {
     ]);
   grunt.registerTask('serve',
     [
-      'build',
+      'clean:build',
+      'sass',
+      'copy:build',
+      'jade:build',
       'watch'
     ]);
   grunt.registerTask('ftp',
