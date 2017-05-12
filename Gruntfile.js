@@ -6,7 +6,7 @@ module.exports = function (grunt) {
   'use script';
 
   var pkg = grunt.file.readJSON('package.json');
-  console.log('Buidling Version: '+ pkg.version);
+  console.log('Building Version: '+ pkg.version);
 
   // Configs
   grunt.initConfig({
@@ -34,7 +34,7 @@ module.exports = function (grunt) {
       },
       buildzip: {
         files: [
-          { src: ['build.'+pkg.version+'.zip'], dest: 'build/' }
+          { src: ['*.zip'], dest: 'build/releases/' }
         ]
       }
     },
@@ -84,20 +84,21 @@ module.exports = function (grunt) {
         }
       }
     },
-    jade: {
+    pug: {
       build: {
         options: {
           pretty: true,
           data: function() {
             return {
-              version: pkg.version
+              version: pkg.version,
+              sitetitle: 'Yet Another Feckin\' Grid System'
             };
           }
         },
         files: [
           {
             cwd: "src",
-            src: ["**/*.jade", "!templates/**/*.jade"],
+            src: ["**/*.pug", "!templates/**/*.pug"],
             dest: "build",
             expand: true,
             ext: ".html"
@@ -112,7 +113,7 @@ module.exports = function (grunt) {
     },
     watch: {
       files: ['src/**/*'],
-      tasks: ['build']
+      tasks: ['serve']
     },
     compress: {
       build: {
@@ -136,7 +137,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-compress');
   grunt.loadNpmTasks('grunt-processhtml');
   grunt.loadNpmTasks('grunt-ftp-push');
-  grunt.loadNpmTasks('grunt-contrib-jade');
+  grunt.loadNpmTasks('grunt-contrib-pug');
 
   // Registered Tasks
   grunt.registerTask('build',
@@ -144,7 +145,7 @@ module.exports = function (grunt) {
       'clean:build',
       'sass',
       'copy:build',
-      'jade:build',
+      'pug:build',
       'compress:build',
       'copy:buildzip'
     ]);
@@ -161,7 +162,8 @@ module.exports = function (grunt) {
       'clean:build',
       'sass',
       'copy:build',
-      'jade:build',
+      'copy:buildzip',
+      'pug:build',
       'watch'
     ]);
   grunt.registerTask('ftp',

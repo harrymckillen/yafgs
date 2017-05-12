@@ -1,0 +1,99 @@
+extends templates/html.pug
+
+block title
+  title #{sitetitle}
+
+block content
+  div.the-flex-grid.small
+
+    include templates/mixins/columns.pug
+
+    span(class="github-ribbon")
+      a(href="https://github.com/harrymckillen/yafgs" target="_blank") Fork on GitHub
+    div.a-row
+      div.a-column.one
+        h1
+          | yet <br>
+          | another <br>
+          | feckin' <br>
+          | grid <br>
+          | system <br>
+
+    div.a-row
+      div.a-column.one
+        div.block.width-100
+          a(href="releases/build.#{version}.zip" class="button") Download &nbsp;
+            span (v.#{version})
+          a(href="https://github.com/harrymckillen/yafgs/blob/master/README.md" class="button") View README
+          div.clear-both
+        div.block.width-100.no-margin
+          a(href="releases/").small-font View previous releases
+
+    div.a-row
+      div.a-column.one
+
+        h2 What is it?
+
+        p Like any grid system you've seen previously. I make no promises this will change your life, rock your world or any other such nonsense. It's just a very straightforward and frank grid system. It works the way it works. Might not be everyone's cup of tea.
+
+        p There are 3 main grid widths:
+
+        ul
+          li Large - 1140px max width
+          li Medium - 960px max width
+          li Small - 800px max width
+
+        h2 Pros of using this
+
+        ul
+          li There are many options to hopefully fit everyone's use cases.
+          li I think it's straightforward and uncomplicated.
+          li It's small in size (~28Kb) for the whole lot.
+          li I've chunked it so that you can Roll Your Own, or just include the grid you want.
+
+        h2 Cons of using this
+
+        ul
+          li This isn't Bootstrap, it doesn't have the wealth of configuration at a breakpoint level
+          li While it is relatively small in size, there's a good chance you won't use all of the options if you include everything, leading to unnecessary bloat in your CSS. If you use something like an automated CSS usage checker, it'll most probably indicate a high percentage of unused CSS. Sorry!
+
+        h2 Version 1.x
+
+        p Relies on the old method of floats, clear, percentages.
+
+        h2 Version 2.x
+
+        p Introduces CSS Flexbox. Currently has very basic support for it. As I learn about Flexbox, and browser support improves, I will develop this version further.
+
+        div.a-row
+          div.a-column.one
+            h2 Grids
+            p
+              a(href="grids/flex-box.html") Flexbox
+            p
+              a(href="grids/12-column.html") 12-Columns
+            p
+              a(href="grids/12-column-nudge-left.html") 12-Columns Nudge Left
+            p
+              a(href="grids/12-column-nudge-right.html") 12-Columns Nudge Right
+            p
+              a(href="grids/16-column.html") 16-Columns
+            p
+              a(href="grids/16-column-nudge-left.html") 16-Columns Nudge Left
+            p
+              a(href="grids/16-column-nudge-right.html") 16-Columns Nudge Right
+            p
+              a(href="grids/pc-column.html") %-Columns
+            p
+              a(href="grids/pc-column-nudge-left.html") %-Columns Nudge Left
+            p
+              a(href="grids/pc-column-nudge-right.html") %-Columns Nudge Right
+            p
+              a(href="grids/centering-column.html") Centering Columns
+
+          div.a-column.one
+            h2 Layouts
+            p
+              a(href="layouts/2-col-header-footer.html") 2-Columns with Header and Footer
+            p
+              a(href="layouts/3-col-header-footer.html") 3-Columns with Header and Footer

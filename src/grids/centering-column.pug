@@ -1,0 +1,16 @@
+extends ../templates/html.pug
+
+block title
+  title Centering Columns | #{sitetitle}
+
+block content
+  div.the-grid
+
+    include ../templates/partials/home-link.pug
+
+    include ../templates/mixins/columns.pug
+
+    h1 Centering Columns
+    +columns(1, 12, true)
+    +columns(2, 12, true)
+    +columns(3, 12, true)

@@ -7,3 +7,10 @@ mixin columns(number, column, centered)
       else
         div(class="a-column width-"+number+"-of-"+column)
           div.content= number
+
+
+mixin columnsflex(number)
+      div.a-row
+        - for (var x = 1; x < number+1; x++)
+          div.a-column.one
+            div.content= number

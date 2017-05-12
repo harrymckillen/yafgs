@@ -1,14 +1,14 @@
-extends ../templates/html.jade
+extends ../templates/html.pug
 
 block title
-  title 16-Column Nudge Left | Yet Another Feckin' Grid System
+  title 16-Column Nudge Left | #{sitetitle}
 
 block content
   div.the-grid
 
-    include ../templates/partials/home-link.jade
+    include ../templates/partials/home-link.pug
 
-    include ../templates/mixins/columns.jade
+    include ../templates/mixins/columns.pug
 
     h1 16-Column Nudge Left
     - for (var z = 1; z < 15; z++)

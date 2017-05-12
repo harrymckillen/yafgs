@@ -1,0 +1,28 @@
+extends ../templates/html.pug
+
+block title
+  title Basic Flexbox | #{sitetitle}
+
+block content
+  div.the-flex-grid
+
+    include ../templates/partials/home-link.pug
+
+    include ../templates/mixins/columns.pug
+
+    h1 Flexbox
+
+    +columnsflex(1)
+    +columnsflex(2)
+    +columnsflex(3)
+    +columnsflex(4)
+    +columnsflex(5)
+    +columnsflex(6)
+    +columnsflex(7)
+    +columnsflex(8)
+    +columnsflex(9)
+    +columnsflex(10)
+    +columnsflex(11)
+    +columnsflex(12)
+
+

@@ -1,14 +1,14 @@
-extends ../templates/html.jade
+extends ../templates/html.pug
 
 block title
-  title 12-Column | Yet Another Feckin' Grid System
+  title 12-Column | #{sitetitle}
 
 block content
   div.the-grid
 
-    include ../templates/partials/home-link.jade
+    include ../templates/partials/home-link.pug
 
-    include ../templates/mixins/columns.jade
+    include ../templates/mixins/columns.pug
 
     h1 12-Column
     +columns(1, 12)

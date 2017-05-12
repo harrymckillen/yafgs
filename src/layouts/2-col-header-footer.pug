@@ -1,12 +1,12 @@
-extends ../templates/html.jade
+extends ../templates/html.pug
 
 block title
-  title 2-Columns with Header and Footer | Yet Another Feckin' Grid System
+  title 2-Columns with Header and Footer | #{sitetitle}
 
 block content
   div.the-grid
 
-    include ../templates/partials/home-link.jade
+    include ../templates/partials/home-link.pug
 
     div.a-row
       div.a-column.width-1-of-12
