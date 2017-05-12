@@ -44,11 +44,15 @@ If you wish to see the Grid System in action, check out <a href="http://yafgs.wo
 * Download the build(version).zip
 * Include one of the pre-compiled CSS file into your project (min or max). 
 
-`
+```
 <link rel="stylesheet" href="css/yafgs.max.css">
-OR
+```
+
+or
+
+```
 <link rel="stylesheet" href="css/yafgs.min.css">
-`
+```
 
 * Voila, build your site/app/theme based on the structure. 
 
