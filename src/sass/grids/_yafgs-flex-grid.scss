@@ -1,0 +1,47 @@
+.the-flex-grid {
+
+  max-width: $grid-max-width-lrg;
+  margin: $std-margin auto;
+  padding: 0 $std-margin;
+
+  &.medium{
+    @include medium-grid-size;
+  }
+
+  &.small{
+    @include small-grid-size;
+  }
+
+  .a-row{
+    display: flex;
+    @include tablet {
+      flex-wrap: wrap;
+    }
+
+    .a-column {
+      margin: $std-margin 0 0 0;
+      padding: 0 ($std-padding/2);
+      &.one{
+        order: 1;
+        flex: 1;
+        @include tablet {
+          flex-grow: 1;
+        }
+      }
+      &.two{
+        order: 2;
+        flex: 2;
+        @include tablet {
+          flex-grow: 1;
+        }
+      }
+      &.three{
+        order: 3;
+        flex: 3;
+        @include tablet {
+          flex-grow: 1;
+        }
+      }
+    }
+  }
+}

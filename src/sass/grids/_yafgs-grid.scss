@@ -2,66 +2,15 @@
 
 // default grid setup values
 
-.the-grid{
-  *,
-  *:after,
-  *:before {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-  }
-  max-width: $grid-max-width-lrg;
-  margin: $std-margin auto;
-  padding: 0 $std-margin;
-  &.medium{
-    max-width: $grid-max-width-med;
-  }
-  &.small{
-    max-width: $grid-max-width-sml;
-  }
-  .a-row{
-    display: block;
-    position: relative;
-    .a-column{
-      margin: $std-margin 0 0 0;
-      float:left;
-      padding: 0 ($std-padding/2);
-      &:after{
-        content: "";
-        clear: both;
-        display: table;
-      }
-      &.centered{
-        margin-left: auto;
-        margin-right: auto;
-        float:none;
-      }
+@include the-grid {
 
-      // include yafgs-12-column
-      @import '_yafgs-12-column';
+  // include yafgs-12-column
+  @include grid-12-columns;
 
-      // include yafgs-16-column
-      @import '_yafgs-16-column';
+  // include yafgs-16-column
+  @include grid-16-columns;
 
-      // include yafgs-%-column
-      @import '_yafgs-pc-column';
+  // include yafgs-%-column
+  @include grid-pc-columns;
 
-      @media screen and (max-width: 767px) {
-        &[class*=' width-']{
-          width:100%;
-          float:none;
-        }
-        &[class*='nudge-']{
-          margin-left: 0;
-          margin-right: 0;
-          float:none;
-        }
-      }
-    }
-    &:after{
-      content: "";
-      clear: both;
-      display: table;
-    }
-  }
 }

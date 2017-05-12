@@ -1,0 +1,70 @@
+@mixin the-grid {
+  .the-grid{
+
+    *,
+    *:after,
+    *:before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    max-width: $grid-max-width-lrg;
+    margin: $std-margin auto;
+    padding: 0 $std-margin;
+
+    &.medium{
+      @include medium-grid-size;
+    }
+
+    &.small{
+      @include small-grid-size;
+    }
+
+    .a-row{
+      display: block;
+      position: relative;
+
+      .a-column{
+        margin: $std-margin 0 0 0;
+        float:left;
+        padding: 0 ($std-padding/2);
+
+        &:after{
+          content: "";
+          clear: both;
+          display: table;
+        }
+
+        &.centered{
+          margin-left: auto;
+          margin-right: auto;
+          float:none;
+        }
+
+        // import the grids
+        @content;
+
+        @include tablet {
+          &[class*=' width-']{
+            width:100%;
+            float:none;
+          }
+          &[class*='nudge-']{
+            margin-left: 0;
+            margin-right: 0;
+            float:none;
+          }
+        }
+      }
+
+      &:after{
+        content: "";
+        clear: both;
+        display: table;
+      }
+    }
+  }
+
+}
+

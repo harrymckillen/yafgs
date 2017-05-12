@@ -19,7 +19,6 @@ body{
 	  font-family: $heading-font;
   }
 	h1{
-		// margin: ($std-margin*2) 0;
     font-size: 3em;
 	}
 	h2{
@@ -27,6 +26,10 @@ body{
 	}
   a {
     color: $main-font-colour;
+  }
+  pre {
+    background-color: #ccc;
+    color: $main-background-colour;
   }
   .home-link {
     margin: 25px 0;
@@ -53,7 +56,7 @@ body{
   .github-ribbon {
     width: 123px;
     display: block;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     top: 0;
     right: 0;
@@ -99,5 +102,20 @@ body{
   }
   .height-600 {
     height:600px;
+  }
+  .block{
+    display: block;
+  }
+  .width-100 {
+    width: 100%;
+  }
+  .clear-both {
+    clear: both;
+  }
+  .small-font {
+    font-size: 0.8em;
+  }
+  .no-margin {
+    margin: 0;
   }
 }

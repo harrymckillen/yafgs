@@ -1,0 +1,28 @@
+@mixin grid-16-columns {
+
+  // 16 Column Grid Widths
+  @for $i from 1 through 16{
+    &.width-#{$i}-of-16 {
+      $sixteen-col: (16/($i*16))*100%;
+      width: $sixteen-col;
+    }
+  }
+
+  // 16 Column Grid Nudge Left
+  @for $i from 1 through 14{
+    &.nudge-16-left-#{$i} {
+      $twelve-col: ($i/15)*100%;
+      margin-left: $twelve-col;
+    }
+  }
+
+  // 16 Column Grid Nudge Right
+  @for $i from 1 through 14{
+    &.nudge-16-right-#{$i} {
+      $twelve-col: ($i/15)*100%;
+      float:right;
+      margin-right: $twelve-col;
+    }
+  }
+
+}
