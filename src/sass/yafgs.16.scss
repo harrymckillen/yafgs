@@ -1,0 +1,20 @@
+/*
+	Yet Another Feckin' Grid System
+	@author: Harry McKillen
+
+  @description: This builds a version of the 16 column grid for individual use,
+  minus all the extra stuff.
+*/
+
+// include yafgs-defaults
+@import 'grids/_yafgs-defaults';
+
+// include yafgs-mixins
+@import 'grids/_yafgs-mixins';
+
+// builds the 16 column grid only
+@include the-grid {
+
+  @include grid-16-columns;
+
+}

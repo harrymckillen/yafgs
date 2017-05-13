@@ -1,0 +1,38 @@
+/*
+	Yet Another Feckin' Grid System
+	@author: Harry McKillen
+
+  @description: This is everything, the whole kit and kaboodle.
+*/
+
+// include yafgs-defaults
+@import 'grids/_yafgs-defaults';
+
+// include yafgs-mixins
+@import 'grids/_yafgs-mixins';
+
+/*
+  Configure the grid.
+
+  If you would like to omit certain parts of the grid system,
+  either replicate this files and role your own version, or
+  remove some of the unrequired lines below.
+
+ */
+
+// include yafgs-flex-grid
+@import 'grids/_yafgs-flex-grid';
+
+// include yafgs-full-grid
+@include the-grid {
+
+  // include yafgs-12-column
+  @include grid-12-columns;
+
+  // include yafgs-16-column
+  @include grid-16-columns;
+
+  // include yafgs-%-column
+  @include grid-pc-columns;
+
+}

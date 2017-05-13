@@ -45,7 +45,10 @@ module.exports = function (grunt) {
           sourcemap: 'none'
         },
         files: {
-          'build/css/yafgs.min.css': 'src/sass/yafgs.scss'
+          'build/css/yafgs.full.min.css': 'src/sass/yafgs.full.scss',
+          'build/css/yafgs.12.min.css': 'src/sass/yafgs.12.scss',
+          'build/css/yafgs.16.min.css': 'src/sass/yafgs.16.scss',
+          'build/css/yafgs.pc.min.css': 'src/sass/yafgs.pc.scss'
         }
       },
       max: {
@@ -54,7 +57,10 @@ module.exports = function (grunt) {
           sourcemap: 'none'
         },
         files: {
-          'build/css/yafgs.max.css': 'src/sass/yafgs.scss'
+          'build/css/yafgs.full.max.css': 'src/sass/yafgs.full.scss',
+          'build/css/yafgs.12.max.css': 'src/sass/yafgs.12.scss',
+          'build/css/yafgs.16.max.css': 'src/sass/yafgs.16.scss',
+          'build/css/yafgs.pc.max.css': 'src/sass/yafgs.pc.scss'
         }
       },
       other: {
@@ -66,7 +72,7 @@ module.exports = function (grunt) {
           {
             expand: true,
             cwd: 'src/sass',
-            src: ['**/*.scss', "!yafgs.scss"],
+            src: ['**/*.scss', "!yafgs.**.scss"],
             dest: 'build/css',
             ext: '.css'
           }
