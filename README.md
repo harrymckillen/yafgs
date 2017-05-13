@@ -1,4 +1,4 @@
-#Yet another feckin' grid system
+# Yet another feckin' grid system
 
 * [Introduction](#introduction)
 * [See it in action](#see-it-in-action)
