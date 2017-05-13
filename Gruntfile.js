@@ -22,14 +22,14 @@ module.exports = function (grunt) {
           debug: false
         },
         files: [
-          {expand: true,cwd: 'build',src: ['**/*']}
+          {expand: true,cwd: 'build',src: ['**/*', 'releases/.htaccess']}
         ]
       }
     },
     copy: {
       build: {
         files: [
-          {expand: true, cwd: 'src/', src: ['js/**'], dest: 'build/'}
+          {expand: true, cwd: 'src/', src: ['js/**', 'releases/.htaccess'], dest: 'build/'}
         ]
       },
       buildzip: {
