@@ -27,10 +27,27 @@ body{
   a {
     color: $main-font-colour;
   }
+  p {
+    line-height: 1.5em;
+  }
+  ul {
+    li {
+      margin-bottom: $std-margin;
+    }
+  }
   pre {
+    padding: $std-margin*2;
     background-color: #ccc;
     color: $main-background-colour;
+    overflow-x: auto;
   }
+  code {
+    padding: $std-margin/2;
+    background-color: #ccc;
+    color: $main-background-colour;
+
+  }
+
   .home-link {
     margin: 25px 0;
     display: block;
@@ -81,8 +98,7 @@ body{
     }
   }
   .button {
-    display: block;
-    float:left;
+    display: inline-block;
     border:3px solid $main-font-colour;
     border-radius:3px;
     padding: 1em 2em;
@@ -91,7 +107,11 @@ body{
     span {
       font-size: 0.7em;
     }
+    &.f-left {
+      float:left;
+    }
   }
+
   .copyright {
     margin-top: 30px;
     text-align:center;

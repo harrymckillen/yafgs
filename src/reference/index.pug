@@ -8,6 +8,191 @@ block content
 
     include ../templates/partials/home-link.pug
 
-    h1 Version 1.x Reference
+    div.a-column.one
+      h1 Version 1.x Reference
 
-    p See <a href="v2.html">here for the newer Version 2.x Reference document.</a>
+      p See <a href="v2.html">here for the newer Version 2.x Reference document.</a>
+
+      ul
+        li
+          a(href="#getting-started") Getting Started
+        li
+          a(href="#grid-sizes") Grid Sizes
+        li
+          a(href="#twelve-column") 12 Column Grid
+        li
+          a(href="#sixteen-column") 16 Column Grid
+        li
+          a(href="#percentage-column") % Column Grid
+        li
+          a(href="#positioning-columns") Positioning Columns
+
+      h2#getting-started Getting Started
+
+      p There are a number of ways to use it. The main HTML structure is as follows.
+
+      pre
+       |  &lt;body class="the-grid"&gt;
+       |    &lt;div class="a-row"&gt;
+       |      &lt;div class="a-column"&gt;
+       |      &lt;/div&gt;
+       |    &lt;/div&gt;
+       |  &lt;/body&gt;
+
+      h2#grid-sizes Grid Sizes
+
+      h3 Default 1140px Grid
+
+      pre
+        |  &lt;body class="the-grid"&gt;
+        |  &lt;/body&gt;
+
+      h3 Medium 960px Grid
+
+      pre
+        |  &lt;body class="the-grid medium"&gt;
+        |  &lt;/body&gt;
+
+      h3 Small 800px Grid
+
+      pre
+        |  &lt;body class="the-grid small"&gt;
+        |  &lt;/body&gt;
+
+
+      h2#twelve-column 12-Column Grid
+
+      pre
+        | &lt;div class="a-row"&gt;
+        |   &lt;div class="a-column width-1-of-12"&gt;&lt;div class="content"&gt;1&lt;/div&gt;&lt;/div&gt;
+        | &lt;/div&gt;
+        |
+        |    ...
+        |
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-12-of-12"&gt;&lt;div class="content"&gt;12&lt;/div&gt;&lt;/div&gt;
+        |  &lt;/div&gt;
+
+      h2#sixteen-column 16-Column Grid
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-1-of-16"&gt;&lt;div class="content"&gt;1&lt;/div&gt;&lt;/div&gt;
+        |  &lt;/div&gt;
+        |
+        |  ...
+        |
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |    &lt;div class="a-column width-16-of-16"&gt;&lt;div class="content"&gt;16&lt;/div&gt;&lt;/div&gt;
+        |  &lt;/div&gt;
+
+      h2#percentage-column %-Column Grid
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-100-in-pc"&gt;
+        |      &lt;div class="content"&gt;100&lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+        |
+        |  ...
+        |
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-1-in-pc"&gt;
+        |      &lt;div class="content"&gt;1&lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+
+      h2#positioning-columns Positioning Columns
+
+      p There are a couple of classes available for the position of columns within the grid, with the ability to center, or nudge (left or right) columns.
+
+      h3 Centering
+
+      p A centered class can be applied to a column like so. However, it will cause all other columns in that row to float beneath it.
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-12-of-12 centered"&gt;
+        |      &lt;div class="content"&gt; Centered 12&lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+
+
+      h3 12 Column Nudging Left or Right
+
+      p Uses the class <code>nudge-12-left-xx</code> or <code>nudge-12-right-xx</code> (where xx is from 1...11).
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |      &lt;div class="a-column width-12-of-12 nudge-12-(left|right)-1"&gt;
+        |          &lt;div class="content"&gt; Nudge Left 1&lt;/div&gt;
+        |      &lt;/div&gt;
+        |  &lt;/div&gt;
+        |
+        |  ...
+        |
+        |  &lt;div class="a-row"&gt;
+        |      &lt;div class="a-column width-12-of-12 nudge-12-(left|right)-11"&gt;
+        |          &lt;div class="content"&gt; Nudge Left 1&lt;/div&gt;
+        |      &lt;/div&gt;
+        |  &lt;/div&gt;
+
+      h3 16 Column Nudging Left or Right
+
+      p Uses the class <code>nudge-16-left-xx</code> or <code>nudge-16-right-xx</code> (where xx is from 1...14).
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-16-of-16 nudge-16-(left|right)-1"&gt;
+        |      &lt;div class="content"&gt; Nudge Left 1&lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+        |
+        |  ...
+        |
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-16-of-16 nudge-16-(left|right)-14"&gt;
+        |      &lt;div class="content"&gt; Nudge Left 1&lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+
+      h3 % Nudging Left or Right
+
+      p Uses the class <code>nudge-pc-left-xx</code> or <code>nudge-pc-right-xx</code> (where xx is from 1...99). This is meant to be as flexible as possible, using the 99% nudge will obviously push any elements beyond the width of the containing element.
+
+      pre
+        |  &lt;div class="a-row"&gt;
+        |    &lt;div class="a-column width-xx-in-xx nudge-pc-left-1"&gt;
+        |      &lt;div class="content"&gt; Nudge 1% Left &lt;/div&gt;
+        |    &lt;/div&gt;
+        |  &lt;/div&gt;
+
+      p And that's a wrap! Short and sweet.
+

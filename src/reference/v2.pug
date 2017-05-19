@@ -10,4 +10,82 @@ block content
 
     h1 Version 2.x Reference
 
-    p Sample
+    p Essentially the same as version 1.x, with an addition of a Flex box based grid.
+
+    ul
+      li
+        a(href="#getting-started") Getting Started
+      li
+        a(href="#grid-sizes") Grid Sizes
+
+    h2#getting-started Getting Started
+
+    p There are a number of ways to use it. Same as before, there are a number of grid sizes.
+
+    p Add the <code>the-flex-grid</code> class to enable the grid. It has the same basic structure as before, in that you have a row, and a column nest below each other.
+
+    pre
+     |  &lt;body class="the-flex-grid"&gt;
+     |    &lt;div class="a-row"&gt;
+     |      &lt;div class="a-column"&gt;
+     |      &lt;/div&gt;
+     |    &lt;/div&gt;
+     |  &lt;/body&gt;
+
+    h2#grid-sizes Flex Grid Sizes
+
+    h3 Default 1140px Grid
+
+    pre
+      |  &lt;body class="the-flex-grid"&gt;
+      |  &lt;/body&gt;
+
+    h3 Medium 960px Grid
+
+    pre
+      |  &lt;body class="the-flex-grid medium"&gt;
+      |  &lt;/body&gt;
+
+    h3 Small 800px Grid
+
+    pre
+      |  &lt;body class="the-flex-grid small"&gt;
+      |  &lt;/body&gt;
+
+    h2#flexbox-order Flex-grid Order
+
+    h3 One
+
+    p The <code>one</code> class ensures the column size is kept the same, and then wraps accordingly.
+
+    pre
+     |  &lt;body class="the-flex-grid"&gt;
+     |    &lt;div class="a-row"&gt;
+     |      &lt;div class="a-column one"&gt;
+     |      &lt;/div&gt;
+     |    &lt;/div&gt;
+     |  &lt;/body&gt;
+
+    h3 Two
+
+    p The <code>two</code> class ensures the column is twice the size of other columns, for example when used in conjunction with an element with a <code>one</code> class.
+
+    pre
+     |  &lt;body class="the-flex-grid"&gt;
+     |    &lt;div class="a-row"&gt;
+     |      &lt;div class="a-column two"&gt;
+     |      &lt;/div&gt;
+     |    &lt;/div&gt;
+     |  &lt;/body&gt;
+
+    h3 Three
+
+    p The <code>three</code> class ensures the column is three times the size of other columns when used with other flex classes.
+
+    pre
+     |  &lt;body class="the-flex-grid"&gt;
+     |    &lt;div class="a-row"&gt;
+     |      &lt;div class="a-column three"&gt;
+     |      &lt;/div&gt;
+     |    &lt;/div&gt;
+     |  &lt;/body&gt;

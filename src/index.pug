@@ -22,9 +22,9 @@ block content
     div.a-row
       div.a-column.one
         div.block.width-100
-          a(href="releases/build.#{version}.zip" class="button") Download &nbsp;
+          a(href="releases/build.#{version}.zip" class="button f-left") Download &nbsp;
             span (v.#{version})
-          a(href="https://github.com/harrymckillen/yafgs/blob/master/README.md" class="button") View README
+          a(href="https://github.com/harrymckillen/yafgs/blob/master/README.md" class="button f-left") View README
           div.clear-both
         div.block.width-100.no-margin
           a(href="releases/").small-font View previous releases
@@ -61,9 +61,13 @@ block content
 
         p Relies on the old method of floats, clear, percentages.
 
+        a(href="reference/" class="button") View 1.x Reference Docs
+
         h2 Version 2.x
 
         p Introduces CSS Flexbox. Currently has very basic support for it. As I learn about Flexbox, and browser support improves, I will develop this version further.
+
+        a(href="reference/v2.html" class="button") View 2.x Reference Docs
 
         div.a-row
           div.a-column.one

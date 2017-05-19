@@ -25,11 +25,15 @@ There are 3 main grid widths:
 
 #### Version 1.x
 
-Relies on the old method of floats, clear, percentages.
+Relies on the old method of floats, clear, percentages. Tried and tested. 
+
+See <a href="http://yafgs.wolfhound.ie/reference/" target="_blank">Version 1.x Reference</a>
 
 #### Version 2.x
 
 Introduces CSS Flexbox. Currently has very basic support for it. As I learn about Flexbox, and browser support improves, I will develop this version further.
+
+See <a href="http://yafgs.wolfhound.ie/reference/v2.html" target="_blank">Version 2.x Reference</a>
 
 ## See it in action
 If you wish to see the Grid System in action, check out <a href="http://yafgs.wolfhound.ie/" target="_blank">yafgs.wolfhound.ie</a>. 
@@ -37,7 +41,8 @@ If you wish to see the Grid System in action, check out <a href="http://yafgs.wo
 ## Features
 
 * Flexible grid system
-* ~ 28Kb in size
+* ~ 29Kb in size for the lot
+* For individual grid types, can be ~3Kb.
 
 ## Installation
 
@@ -45,26 +50,25 @@ If you wish to see the Grid System in action, check out <a href="http://yafgs.wo
 * Include one of the pre-compiled CSS file into your project (min or max). 
 
 ```
-<link rel="stylesheet" href="css/yafgs.max.css">
+<link rel="stylesheet" href="css/yafgs.full.(max|min).css">
+<link rel="stylesheet" href="css/yafgs.12.(max|min).css">
+<link rel="stylesheet" href="css/yafgs.16.(max|min).css">
+<link rel="stylesheet" href="css/yafgs.pc.(max|min).css">
+
 ```
 
-or
-
-```
-<link rel="stylesheet" href="css/yafgs.min.css">
-```
-
-* Voila, build your site/app/theme based on the structure. 
+* Voila, build your site/app/theme based on the structure. See [Usage](#usage)
 
 ## Usage
 
-See the YAFGS Reference. 
+See the <a href="http://yafgs.wolfhound.ie/reference/" target="_blank">YAFGS Reference</a>. 
 
 ## Browser Support
-IE8+, All other modern browsers. I have no desire to make it work on <=IE7.
+* v1.x: IE8+, All other modern browsers. I have no desire to make it work on <=IE7.
+* v2.x: Only modern browsers, see <a href="http://caniuse.com/#feat=flexbox" target="_blank">caniuse.com</a>. 
 
 ## License
-There's no real license, it's free to use wherever, fork, change as you need it. The original Sass files are there. 
+I've added an MIT License. Go nuts! 
 
 ## Issues
 Please feel free to raise issues. I may not be able to fix them right away, but I will try. 
