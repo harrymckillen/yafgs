@@ -93,7 +93,7 @@ module.exports = function (grunt) {
     pug: {
       build: {
         options: {
-          pretty: true,
+          pretty: false,
           data: function() {
             return {
               version: pkg.version,
